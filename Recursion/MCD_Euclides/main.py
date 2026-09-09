@@ -7,6 +7,9 @@ divisor = int(input("Divisor (menor): "))
 
 # Aplica recursivamente el algoritmo de Euclides, reemplazando cada par de
 # valores por el divisor y el residuo hasta que uno de ellos sea cero.
+# @param dividendo: Primer número entero utilizado en el algoritmo.
+# @param divisor: Segundo número entero utilizado para obtener el residuo.
+# @return: Máximo común divisor de los dos números.
 def mcdRecursion(dividendo, divisor):
     if dividendo == 0:
         return divisor
@@ -16,6 +19,9 @@ def mcdRecursion(dividendo, divisor):
 
 # Aplica el algoritmo de Euclides de forma iterativa. En cada vuelta actualiza
 # simultáneamente el dividendo y el divisor, y termina cuando el divisor es cero.
+# @param dividendo: Primer número entero utilizado en el algoritmo.
+# @param divisor: Segundo número entero utilizado para obtener el residuo.
+# @return: Máximo común divisor de los dos números.
 def mcdFor(dividendo, divisor):
     if divisor == 0:
         return dividendo

@@ -7,6 +7,8 @@ longitud = len(lista)
 
 # Suma recursivamente el elemento ubicado en longitud - 1 y reduce la longitud
 # en cada llamada hasta alcanzar el caso base.
+# @param longitud: Cantidad de elementos de la lista que se deben sumar.
+# @return: Suma de los elementos procesados mediante recursión.
 def sumaListaRecursion(longitud):
     if longitud == 1:
         return 1
@@ -14,6 +16,8 @@ def sumaListaRecursion(longitud):
 
 # Recorre la lista desde el primer elemento hasta la longitud indicada y
 # acumula el valor de cada posición en la variable suma.
+# @param longitud: Cantidad de elementos de la lista que se deben sumar.
+# @return: Suma de los elementos procesados mediante un ciclo for.
 def sumaListaFor(longitud):
     suma = 0
     for i in range (0, longitud):

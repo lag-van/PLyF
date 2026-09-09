@@ -7,6 +7,9 @@ potencia = int(input("Potencia: "))
 
 # Calcula la potencia de forma iterativa, multiplicando la base tantas veces
 # como indique el exponente.
+# @param base: Número que se multiplica por sí mismo.
+# @param potencia: Exponente que indica el número de multiplicaciones.
+# @return: Potencia calculada de forma iterativa.
 def potenciaFor(base, potencia):
     resultado=1
     for i in range (0, potencia):
@@ -15,6 +18,9 @@ def potenciaFor(base, potencia):
 
 # Calcula la potencia reduciendo el exponente en cada llamada recursiva.
 # El exponente igual a cero es el caso base y devuelve el elemento neutro 1.
+# @param base: Número que se multiplica por sí mismo.
+# @param potencia: Exponente que disminuye en cada llamada recursiva.
+# @return: Potencia calculada de forma recursiva.
 def potenciaRecursion(base, potencia):
     if potencia == 0:
         return 1

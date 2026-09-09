@@ -1,9 +1,12 @@
-#Calcula el MCD con el algoritmo de Euclides mediante ciclo for y recursion
+# Programa: Cálculo del máximo común divisor (MCD).
+# Descripción general: Solicita dos números y aplica el algoritmo de Euclides
+# mediante dos métodos de solución: recursión y repetición con un ciclo for.
 
 dividendo = int(input("Dividendo (mayor): "))
 divisor = int(input("Divisor (menor): "))
 
-#Por medio de recursion
+# Aplica recursivamente el algoritmo de Euclides, reemplazando cada par de
+# valores por el divisor y el residuo hasta que uno de ellos sea cero.
 def mcdRecursion(dividendo, divisor):
     if dividendo == 0:
         return divisor
@@ -11,7 +14,8 @@ def mcdRecursion(dividendo, divisor):
         return dividendo
     return mcdRecursion(divisor, (dividendo%divisor))
 
-##Por medio de ciclo for
+# Aplica el algoritmo de Euclides de forma iterativa. En cada vuelta actualiza
+# simultáneamente el dividendo y el divisor, y termina cuando el divisor es cero.
 def mcdFor(dividendo, divisor):
     if divisor == 0:
         return dividendo

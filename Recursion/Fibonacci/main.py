@@ -1,6 +1,9 @@
-#El siguiente programa maneja la estructura de Fibonacci por medio de recursión y por medio de un ciclo FOR.
+# Programa: Cálculo del factorial de un número.
+# Descripción general: Calcula el factorial de un valor fijo y compara dos
+# métodos de solución: recursión y acumulación iterativa mediante un ciclo for.
 
-#Por recursión
+# Calcula el factorial reduciendo n en cada llamada recursiva.
+# El caso base n == 1 finaliza la recursión y permite acumular los productos.
 def fact_rec(n):
     if n == 1:
         return 1
@@ -8,7 +11,8 @@ def fact_rec(n):
 
 print ("Recursion: ", fact_rec(3))
 
-#Por medio de un ciclo FOR
+# Calcula el factorial de manera iterativa, multiplicando todos los enteros
+# comprendidos entre 1 y n en la variable resultado.
 def fact_for(n):
     resultado = 1
     for i in range (1,n+1):
